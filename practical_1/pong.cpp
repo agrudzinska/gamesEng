@@ -29,9 +29,9 @@ void Load(){
 	ball.setOrigin(ballRadius/2, ballRadius/2);
 	//reset paddle position
 	paddles[0].setPosition(10+paddleSize.x/2, gameHeight/2);
-	paddles[1].setPosition(...);
+	paddles[1].setPosition(770+paddleSize.x/2, gameHeight/2);
 	//reset ball position
-	ball.setPosition(...);
+	ball.setPosition(395+paddleSize.x/2, gameHeight/2);
 	
 }
 
