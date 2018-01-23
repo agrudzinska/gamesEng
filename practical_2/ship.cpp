@@ -1,4 +1,5 @@
 #include "ship.h"
+#include "game.h"
 using namespace sf;
 using namespace std;
 
@@ -13,3 +14,13 @@ Ship::Ship(IntRect ir) : Sprite(){
 void Ship::Update(const float &dt){}
 //define the ship destructor
 Ship::~Ship() = default;
+
+Invader::Invader() : Ship(){}
+Invader::Invader(sf::IntRect ir, sf::Vector2f pos) : Ship(ir){
+	setOrigin(16,16);
+	setPosition(pos);
+}
+
+void Invader::Update(const float &dt){
+	Ship::Update(dt);
+}
